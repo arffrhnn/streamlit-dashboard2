@@ -10,8 +10,8 @@ def load_data():
   # Convert TotalCharges to numeric
   df["TotalCharges"] = pd.to_numeric(df["TotalCharges"], errors="coerce")
   df = df.dropna()
-
- return df
+  
+  return df
 
 df = load_data()
 
